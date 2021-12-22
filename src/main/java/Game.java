@@ -1,2 +1,5 @@
-package main.java;public class Game {
+package main.java;
+
+public class Game {
+
 }
