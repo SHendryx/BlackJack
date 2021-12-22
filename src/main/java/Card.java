@@ -18,18 +18,8 @@ public class Card {
 
   @Override
   public String toString() {
-    StringBuilder myString = new StringBuilder();
-    int codePoint = 127136;
-    switch (this.suit){
-      case CLUBS:
-        codePoint += this.rank.value;
-        char[] charPair = Character.toChars(codePoint);
-        String symbol = new String(charPair);
-        myString.append(symbol);
-        break;
-      default:
-        myString.append(rank + " of " + suit);
-    }
-    return myString.toString();
+    StringBuilder myCardString = new StringBuilder();
+    myCardString.append(this.rank).append(" of ").append(this.suit);
+    return myCardString.toString();
   }
 }

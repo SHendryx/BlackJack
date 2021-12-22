@@ -1,6 +1,7 @@
 package main.java;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Deck{
@@ -14,6 +15,9 @@ public class Deck{
     }
   }
 
+  public void shuffle(){
+    Collections.shuffle(deck);
+  }
   public String toString(){
     StringBuilder stringOut = new StringBuilder();
     for (Card c : deck){
