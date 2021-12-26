@@ -9,11 +9,15 @@ public class Card {
     this.suit = s;
   }
 
-  public String getUnicode() {
-    StringBuilder myUnicode = new StringBuilder();
+  public Rank getRank() {
+    return rank;
+  }
 
+  public int getValue() {
+    int value = 0;
+    value += ;
 
-    return myUnicode.toString();
+    return value;
   }
 
   @Override
