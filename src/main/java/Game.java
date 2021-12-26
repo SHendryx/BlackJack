@@ -1,7 +1,7 @@
 package main.java;
 
 public class Game {
-  private static Game gameInstance = null;
+  private static Game gameInstance = new Game();
 
   private Deck gameDeck;
   private Hand dealerHand;
@@ -13,13 +13,12 @@ public class Game {
     gameDeck.shuffle();
 
     // Create two hands. One for dealer, one for player.
+    Hand dealerHand = new Hand();
+    Hand playerHand = new Hand();
 
   }
 
-  public static Game Game(){
-    if (gameInstance == null){
-      gameInstance = new Game();
-    }
+  public static Game getInstance(){
     return gameInstance;
   }
 }

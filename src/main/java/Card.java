@@ -15,7 +15,7 @@ public class Card {
 
   public int getValue() {
     int value = 0;
-    value += ;
+    //value += someval;
 
     return value;
   }
