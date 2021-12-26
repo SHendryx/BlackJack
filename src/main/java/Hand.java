@@ -20,10 +20,10 @@ public class Hand {
       // We'll add the hard value of every card and later add the soft value (+10) for ACES if we
       // can.
 
-      if (c.getRank() == 'ACE'){
+      if (c.getRank() == Rank.ACE){
         numAces++;
       }
-      handValue += c.getValue;
+      handValue += c.getValue();
 
       for (int i = 0; i < numAces; i++){
         if (handValue + 10 < 21){
