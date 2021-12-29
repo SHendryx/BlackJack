@@ -5,11 +5,15 @@ import java.util.List;
 
 public class Hand {
 
-  List<Card> hand;
+  private List<Card> hand;
 
   public Hand(){
     // A basic hand contains 2 cards. It won't be too labor-intensive to add cards to the hand.
-    this.hand = new ArrayList<>(2);
+    hand = new ArrayList<>(2);
+  }
+
+  public void addCard(Card c){
+    hand.add(c);
   }
 
   public int getHandValue(){

@@ -1,6 +1,7 @@
 package main.java;
 
 public class DealerHand extends Hand{
+  Hand hand = new Hand();
 
   public void showHand(){
     StringBuilder dealerHand = new StringBuilder();
